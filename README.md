@@ -187,6 +187,6 @@
   {
     "عکس": "https://s25.picofile.com/file/8451765768/images.jpeg",
     "لینک": "https://www.aparat.com/video/video/embed/videohash/ycawj/vt/frame?isamp",
-    "کد": "تست سرور"
+    "کد": "ارتارور"
   }
 ]
