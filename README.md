@@ -147,7 +147,7 @@
   {
     "عکس": "https://s18.picofile.com/file/8435377718/PicsArt_06_02_01_57_50.jpg",
     "لینک": "https://www.aparat.com/video/video/embed/videohash/tMfHj/vt/frame?isamp",
-    "کد": "getWindow().getDecorView()\n  .setSystemUiVisibility(\n    View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY\n  );\n\n//mode by Sketchware helper"
+    "کد": "getWindow().getDecorView()\n .setSystemUiVisibility(\n View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY\n );\n\n//mode by Sketchware helper"
   },
   {
     "عکس": "https://s19.picofile.com/file/8435380100/PicsArt_06_02_02_23_03.jpg",
@@ -177,11 +177,16 @@
   {
     "عکس": "https://s18.picofile.com/file/8435734518/PicsArt_06_06_08_16_42.jpg",
     "لینک": "https://www.aparat.com/video/video/embed/videohash/bEnAL/vt/frame?isamp",
-    "کد": "/*\nDeveloper :- AauraParti YouTube channel\nPowered by :- Gopal\n*/\n\nfinal Context context \u003d getApplicationContext();\n\n\nNotificationManager notificationManager \u003d (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);\n\nIntent intent \u003d new Intent(this, MainActivity.class); \nintent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP); \nPendingIntent pendingIntent \u003d PendingIntent.getActivity(this, 0, intent, 0); \nandroidx.core.app.NotificationCompat.Builder builder; \n\n    int notificationId \u003d 1;\n    String channelId \u003d \"channel-01\";\n    String channelName \u003d \"Channel Name\";\n    int importance \u003d NotificationManager.IMPORTANCE_HIGH;\n\n    if (android.os.Build.VERSION.SDK_INT \u003e\u003d android.os.Build.VERSION_CODES.O) {\n        NotificationChannel mChannel \u003d new NotificationChannel(\n                channelId, channelName, importance);\n        notificationManager.createNotificationChannel(mChannel);\n    }\n\n   \n androidx.core.app.NotificationCompat.Builder mBuilder \u003d new androidx.core.app.NotificationCompat.Builder(context, channelId)\n            .setSmallIcon(R.drawable.icon)\n            .setContentTitle(_Title)\n            .setContentText(_Message)\n            .setAutoCancel(false)\n            .setOngoing(true)\n            .setContentIntent(pendingIntent);\n    TaskStackBuilder stackBuilder \u003d TaskStackBuilder.create(context);\n    stackBuilder.addNextIntent(intent);\n    PendingIntent resultPendingIntent \u003d stackBuilder.getPendingIntent(\n            0,\n            PendingIntent.FLAG_UPDATE_CURRENT\n    );\n    mBuilder.setContentIntent(resultPendingIntent);\n\n    notificationManager.notify(notificationId, mBuilder.build());"
+    "کد": "/*\nDeveloper :- AauraParti YouTube channel\nPowered by :- Gopal\n*/\n\nfinal Context context \u003d getApplicationContext();\n\n\nNotificationManager notificationManager \u003d (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);\n\nIntent intent \u003d new Intent(this, MainActivity.class); \nintent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP); \nPendingIntent pendingIntent \u003d PendingIntent.getActivity(this, 0, intent, 0); \nandroidx.core.app.NotificationCompat.Builder builder; \n\n int notificationId \u003d 1;\n String channelId \u003d \"channel-01\";\n String channelName \u003d \"Channel Name\";\n int importance \u003d NotificationManager.IMPORTANCE_HIGH;\n\n if (android.os.Build.VERSION.SDK_INT \u003e\u003d android.os.Build.VERSION_CODES.O) {\n NotificationChannel mChannel \u003d new NotificationChannel(\n channelId, channelName, importance);\n notificationManager.createNotificationChannel(mChannel);\n }\n\n \n androidx.core.app.NotificationCompat.Builder mBuilder \u003d new androidx.core.app.NotificationCompat.Builder(context, channelId)\n .setSmallIcon(R.drawable.icon)\n .setContentTitle(_Title)\n .setContentText(_Message)\n .setAutoCancel(false)\n .setOngoing(true)\n .setContentIntent(pendingIntent);\n TaskStackBuilder stackBuilder \u003d TaskStackBuilder.create(context);\n stackBuilder.addNextIntent(intent);\n PendingIntent resultPendingIntent \u003d stackBuilder.getPendingIntent(\n 0,\n PendingIntent.FLAG_UPDATE_CURRENT\n );\n mBuilder.setContentIntent(resultPendingIntent);\n\n notificationManager.notify(notificationId, mBuilder.build());"
   },
   {
     "عکس": "https://s18.picofile.com/file/8436863526/PicsArt_06_18_06_13_39.jpg",
     "لینک": "https://www.aparat.com/video/video/embed/videohash/ycawj/vt/frame?isamp",
     "کد": "کدی وجود ندارد"
+  },
+  {
+    "عکس": "https://s25.picofile.com/file/8451765768/images.jpeg",
+    "لینک": "https://www.aparat.com/video/video/embed/videohash/ycawj/vt/frame?isamp",
+    "کد": "تست سرور"
   }
 ]
